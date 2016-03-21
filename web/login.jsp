@@ -1,4 +1,7 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="header.jsp" %>
+
+
 
     <section class="sub-banner">
         <div class="bg-parallax bg-1"></div>
@@ -9,6 +12,7 @@
         </div>
     </section>
     <div class="main">
+
         <div class="container">
             <div class="main-cn element-page bg-white clearfix">
                 <section class="user-profile">
@@ -17,7 +21,7 @@
                             <div class="col-md-6">
                                 <h2 class="user-profile__title">Sign in</h2>
                                 <p>Access your account information and manage your bookings.</p>
-                                <form action="/loginIn" method="post">
+                                <form action="/index" method="post">
                                     <div class="field-input">
                                         <input type="text" name="loginInIdBooster" class="input-text" value="IdBooster *">
                                     </div>
@@ -29,10 +33,11 @@
                                     </div>
                                 </form>
                             </div>
+
                             <div class="col-md-6">
                                 <h2 class="user-profile__title">Sign up</h2>
                                 <p>Sign up now and receive exclusive offers with huge discounts</p>
-                                <form action="/loginUp" method="post">
+                                <form action="/" method="post">
                                     <div class="field-input">
                                         <input type="text" name="idBooster" class="input-text" value="IdBooster *">
                                     </div>
@@ -52,7 +57,7 @@
                                         <input type="text" name="password" class="input-text" value="Password *">
                                     </div>
                                     <div class="field-input">
-                                        <button type="submit" class="awe-btn awe-btn-1 awe-btn-medium">Sign up</button>
+                                        <button type="submit" name="submit" class="awe-btn awe-btn-1 awe-btn-medium">Sign up</button>
                                     </div>
                                 </form>
                             </div>
